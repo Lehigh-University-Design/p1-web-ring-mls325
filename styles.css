@@ -1,0 +1,199 @@
+/*Defines Parent Section Formatting*/
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 400px;
+    padding: 100px 20vw;
+
+}
+
+/* styles.css */
+
+/* General Body Style */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Header Section - Smooth, Cinematic */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('masego-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ff6347;
+    
+}
+
+/* Scroll down arrow styling */
+.scroll-down-arrow {
+    font-size: 3rem;
+    color: #ff6347;
+    text-align: center;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+header h1 {
+    font-size: 8rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    transform: scale(1.05);
+}
+
+header p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* About Section - Romantic, Lush */
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #dcdcdc;
+}
+
+/* Music Section - Vibrant, Soulful */
+iframe {
+    margin-bottom: 2rem;
+    border: 3px solid #ff6347;
+    border-radius: 15px;
+}
+
+/* Genre Section - Playful, Interactive */
+.genres {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.genre-box {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+}
+
+.genre-box:hover {
+    background-color: #555;
+}
+
+#genre-info {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Gallery Section - Mellow, Cinematic */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 10%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section - Smooth, Afrofuturistic */
+.socials {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.socials h3 {
+    font-size: 1.8rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+/* Webring Footer Styling - Clean and Minimal */
+.webring-footer {
+    position: relative;
+    background-color: #f4f4f4; /* Light background to contrast the site */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.webring-links {
+    display: flex;
+    justify-content:space-evenly;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.webring-link {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.webring-footer {
+    border-top: 1px solid #ddd; /* Adds a clean dividing line */
+    padding: 20px 0;
+}
+.webring-link:hover {
+    color: #ff6347; /* Accent color on hover */
+    text-decoration: underline; /* Light underline to indicate interaction */
+}

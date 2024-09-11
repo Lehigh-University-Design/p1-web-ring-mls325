@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=">
+    
     <title>Webring</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- This is to change the font of the page-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+ 
+
 </head>
 <body>
-    
+
+    <main>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-h1"><h1>Masego</h1></div>
+        <p>Blending Jazz, R&B and Hip-Hop.</p>
+
+        <!-- Scroll down arrow -->
+    <div class="scroll-down-arrow">
+        &#x2193;
+    </div>
+
+    </header>
+
+    <!-- MUSIC SECTION -->
+    <section id="music">
+        <iframe width="100%" height="380" src="https://www.youtube.com/embed/3VSlj34f2aQ?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- GENRE SECTION -->
+    <section id="genre">
+        <h2>TrapHouseJazz</h2>
+        <div class="genres">
+            <div class="genre-box" data-genre="Jazz">Jazz</div>
+            <div class="genre-box" data-genre="R&B">R&B</div>
+            <div class="genre-box" data-genre="Hip-Hop">Hip-Hop</div>
+        </div>
+        <p id="genre-info">Click on a genre to learn how Masego incorporates these into his unique sound.</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Masego</h2>
+        <p>Masego is a multi-talented musician known for blending jazz, R&B, and hip-hop into a smooth, genre-defying sound. A singer, songwriter, producer, and saxophonist, he often refers to his style as "TrapHouseJazz." Masego gained widespread recognition with his hit single "Tadow," showcasing his improvisational skills and unique musical flair. His music is characterized by its soulful melodies, intricate saxophone solos, and a laid-back vibe that reflects his playful yet introspective personality. His live performances are equally captivating, often highlighting his versatility as a one-man band.</p>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="image1.jpg" alt="Masego performing live">
+            <img src="image2.jpg" alt="Masego studio session">
+            <img src="image3.jpg" alt="Masego concert">
+        </div>
+    </section>
+
+    <div class="socials">
+        <h3>Socials</h3>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/masego/?hl=en" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/iammasego" target="_blank">Twitter</a></li>
+            <li><a href="https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig" target="_blank">Spotify</a></li>
+        </ul>
+    </div>
+
+<!-- Clean Webring Footer -->
+<footer class="webring-footer">
+    <div class="webring-links">
+        <!-- Previous Member -->
+        <a href="https://previous-site.com" class="webring-link">
+            &#8592; Test1
+        </a>
+        
+        <!-- Next Member -->
+        <a href="https://next-site.com" class="webring-link">
+            Test2 &#8594;
+        </a>
+    </div>
+</footer>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
