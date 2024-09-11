@@ -26,6 +26,31 @@ body {
 
 }
 
+.flow-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #ff6347; /* Your accent color */
+    z-index: -1; /* Keeps the line behind the content */
+}
+
+/* Dot for each section */
+
+#about::before, #genre::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Aligns it with the vertical center line */
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff6347; /* Your accent color */
+    border-radius: 50%; /* Makes the dot circular */
+    top: 0; /* Place it at the top of each section */
+    z-index: 1;
+}
+
 /* Header Section - Smooth, Cinematic */
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('masego-bg.jpg') no-repeat center center/cover;
@@ -89,7 +114,8 @@ header p {
 
 /* Music Section - Vibrant, Soulful */
 iframe {
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
     border: 3px solid #ff6347;
     border-radius: 15px;
 }
@@ -183,7 +209,7 @@ iframe {
     position: relative;
     background-color: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: .25rem 0;
     text-align: center;
     
 }
