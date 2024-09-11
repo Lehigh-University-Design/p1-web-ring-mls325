@@ -55,7 +55,7 @@ header {
         transform: translateY(-10px);
     }
     60% {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
 
@@ -74,6 +74,7 @@ header p {
 
 /* Section Styling */
 section {
+    position: relative;
     padding: 2rem;
     text-align: center;
 }
@@ -97,7 +98,7 @@ iframe {
 /* Genre Section - Playful, Interactive */
 .genres {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     margin: 1.5rem 0;
 }
 
@@ -178,7 +179,7 @@ iframe {
 
 .webring-links {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     max-width: 600px;
     margin: 0 auto;
 }

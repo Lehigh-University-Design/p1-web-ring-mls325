@@ -13,3 +13,10 @@ document.querySelectorAll('.genre-box').forEach(item => {
         }
     });
 });
+
+document.querySelector('.scroll-down-arrow').addEventListener('click', () => {
+    window.scroll({
+        top: document.querySelector('#music').offsetTop,
+        behavior: 'smooth'
+    });
+});
